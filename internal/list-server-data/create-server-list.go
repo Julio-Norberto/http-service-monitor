@@ -5,6 +5,7 @@ type Server struct {
 	ServerUrl     string
 	ExecutionTime float64
 	StatusCode    int
+	FailDate      string
 }
 
 func CreateServerList(data [][]string) []Server {
