@@ -16,6 +16,4 @@ func main() {
 	servers := listserverdata.CreateServerList(serverList)
 	downServers := returnservers.PrintServerList(servers)
 	generatedowntimelist.GenerateDownTimeServers(downTimeList, downServers)
-
-	returnservers.PrintServerList(servers)
 }

@@ -15,9 +15,9 @@ func PrintServerList(servers []listserverdata.Server) []listserverdata.Server {
 		now := time.Now()
 		get, err := http.Get(server.ServerUrl)
 		if err != nil {
-			fmt.Printf("Server %s is down %s", server.ServerName, err.Error())
+			fmt.Printf("Server %s is down %s\n", server.ServerName, err.Error())
 			server.StatusCode = 0
-			server.FailDate = now.Format("02/01/2023 15:04:05")
+			server.FailDate = now.Format("02/01/2020 15:04:05")
 			downServers = append(downServers, server)
 			continue
 		}
@@ -31,7 +31,6 @@ func PrintServerList(servers []listserverdata.Server) []listserverdata.Server {
 		server.ExecutionTime = float64(time.Since(now).Seconds())
 
 		fmt.Printf("Status: [%d] Tempo de carga: [%f] Server: [%s]\n", server.StatusCode, server.ExecutionTime, server.ServerUrl)
-		//fmt.Println(server)
 	}
 
 	return downServers
