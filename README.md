@@ -6,7 +6,7 @@ Este repositório contém um monitor de serviços HTTP feito em GO, com ele voc�
 
 ## Como usar
 
-Para isso basta ir até a pasta referente ao seu sistema operacional e rodar o executável, você deve passar dois parâmetros ao executar o Script, o primeiro é a lista de servidores que será monitorada e o segundo é o nome da lista de servidores que será criada para armazenar os servidores que não estiverem no ar ou retornarem algum código diferente de 200. 
+Para isso basta ir até a pasta referente ao seu sistema operacional dentro da pasta build e rodar o executável, você deve passar dois parâmetros ao executar o Script, o primeiro é a lista de servidores que será monitorada e o segundo é o nome da lista de servidores que será criada para armazenar os servidores que não estiverem no ar ou retornarem algum código diferente de 200. 
 
 Exemplo: `./httpmon server-list.csv serversdown.csv`
 
